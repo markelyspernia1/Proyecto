@@ -1,3 +1,6 @@
+// Menu e hamburger 
+
+
 class MobileNavbar {
     constructor(mobileMenu, navList, navLinks) {
       this.mobileMenu = document.querySelector(mobileMenu);
