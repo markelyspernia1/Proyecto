@@ -175,3 +175,62 @@ h1 h2  {
   justify-content: center;
 }
 
+.card {
+  width: 100%;
+  max-width: 300px;
+  background-color: rgb(43, 61, 96);
+  margin: 1em;
+}
+
+.card__img {
+  width: 100%;
+  height: 150px;
+  background-image: url(../projeto/css.png);
+  background-size: cover;
+}
+
+.card__title {
+  padding: 20px;
+}
+
+.card__projects-links{
+  display: flex;
+  justify-content: space-evenly;
+}
+.card__projects-links a {
+  color: rgb(244, 236, 236);
+  text-decoration: none;
+}
+
+.card__projects-links i {
+  font-size: 2.5em;
+}
+
+.button-content {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+}
+
+.portafolio .container {
+  width: 100%;
+  max-width: 80vw;
+  height: 100%;
+  max-height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}  
+.project-details, button  {
+padding: 10px 20px;
+background-color: #849dcc;
+border: none;
+border-radius: 20px;
+margin-top: 10px;
+cursor: pointer;
+-webkit-box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.69);
+-moz-box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.69);
+box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.69);
+}
+
