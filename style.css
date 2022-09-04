@@ -4,7 +4,7 @@
 }
 /* ------------------------------------- menu e hamburger---------------------------------------*/
 a {
-  color: #fff;
+  color: rgb(251, 247, 247);
   text-decoration: none;
   transition: 0.3s;
 }
@@ -132,6 +132,8 @@ h1 h2  {
   font-size: 3em;
 }
 
+.container a { color:aqua;}
+
 .main img {
   border: 5px solid #23232e;
   width: 100%;
@@ -141,13 +143,13 @@ h1 h2  {
   
 }
 
-/*---------------------------------------------cards----------------------------------------------------*/
+/*-----------------------------------cards----------------------------------------------*/
 
 .portafolio {
-  width: 100%;
-  max-width: 100vw;
-  background-color: #23232e;
-  color: #fff;
+width: 100%;
+max-width: 100vw;
+background-color:#23232e;
+color: #fff;
 }
 
 .portafolio-heading {
@@ -159,20 +161,21 @@ h1 h2  {
   padding: 5em;
 }
 
-.portafolio-heading h2 {
-  font-size: 2.5em;
-  color: #fff;
+.portafolio-heading h2,
+.contact-heading h2 {
+font-size: 2.5em;
+color: #fff;
 }
 
 .portafolio .container {
-  width: 100%;
-  max-width: 80vw;
-  max-height: 80vh;
-  height: 100%;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+width: 100%;
+max-width: 80vw;
+max-height: 80vh;
+height: 100%;
+margin: 0 auto;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .card {
@@ -185,7 +188,7 @@ h1 h2  {
 .card__img {
   width: 100%;
   height: 150px;
-  background-image: url(./css.png);
+  background-image: url(../projeto/css.png);
   background-size: cover;
 }
 
@@ -234,13 +237,14 @@ cursor: pointer;
 box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.69);
 }
 
-/*--------------------------------------------------formulario de contato---------------------------------*/
+/*---------------------------formulario de contato-----------------------------*/
+
 
 :root {
-  --primary-color:aqua;
-  --bg-color:#23232e;
-  --text-color:#f0f0f5;
-  --light-color:#23232e;
+--primary-color:aqua;
+--bg-color:#23232e;
+--text-color:#f0f0f5;
+--light-color:#23232e;
 }
 
 .contacto {
@@ -250,88 +254,87 @@ display: flex;
 flex-direction: column;
 background-color: var(--bg-color);
 color:var(--text-color);
-  }
+}
 
-  form {
-    background: rgba(255, 255, 255, 0.03);
+form {
+  background: rgba(255, 255, 255, 0.03);
 
-    width: 100%;
-    max-width: 500px;
+  width: 100%;
+  max-width: 500px;
 
-    margin: 32px auto;
-    padding: 32px 64px;
+  margin: 32px auto;
+  padding: 32px 64px;
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 form h2 {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 div.input {
-    margin-bottom: 24px;
-    position: relative;
+  margin-bottom: 24px;
+  position: relative;
 }
 
 input
 {
-    /* reset appeareance */
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
+  /* reset appeareance */
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
 
-    /* box */
-    width: 100%;
+  /* box */
+  width: 100%;
 
-    padding: 16px 0;
+  padding: 16px 0;
 
-    border:none;
-    border-bottom: 1px solid var(--primary-color);
+  border:none;
+  border-bottom: 1px solid var(--primary-color);
 
-    background-color: transparent;
+  background-color: transparent;
 
-    outline: none;
+  outline: none;
 
-    /* text */
-    color: var(--text-color);
-    font-size: 1em;
+  /* text */
+  color: var(--text-color);
+  font-size: 1em;
 
 }
 
 button {
-    margin-top: 16px;
-    background-color: var(--primary-color);
+  margin-top: 16px;
+  background-color: var(--primary-color);
 }
 
 input ~ label {
-    position: absolute;
-    top: 16px;
-    left: 0;
+  position: absolute;
+  top: 16px;
+  left: 0;
 
-    color: rgba(255, 255, 255, 0.6) ;
+  color: rgba(255, 255, 255, 0.6) ;
 
-    transition: .4s;
+  transition: .4s;
 }
 
 input:focus ~ label,
 input:valid ~ label {
-    transform: translateY(-24px);
-    font-size: 0.8em;
-    letter-spacing: 0.1em;
+  transform: translateY(-24px);
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
 }
 
 
 .input span.error {
-    display: flex;
-    
-    padding: 0;
+  display: flex;
+  
+  padding: 0;
 
-    background-color: rgba(249, 232, 4, 0.2);
+  background-color: rgba(249, 232, 4, 0.2);
 }
 
 .input span.error.active {
-    border: 1px solid rgba(245, 225, 7, 0.5);
-    padding: 0.4em;
+  border: 1px solid rgba(245, 225, 7, 0.5);
+  padding: 0.4em;
 }
-
