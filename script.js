@@ -46,19 +46,19 @@ const mobileNavbar = new MobileNavbar(
 );
 mobileNavbar.init();
 
-
+//-------------------------formulario----------------------------------------------
 
 
 const fields = document.querySelectorAll("[required]")
 
 function ValidateField(field) {
-  // logica para verificar se existem erros
+  //  verificar se existem erros
   function verifyErrors() {
       let foundError = false;
 
       for(let error in field.validity) {
           // se não for customError
-          // então verifica se tem erro
+          //  verifica se tem erro
           if (field.validity[error] && !field.validity.valid ) {
               foundError = error
           }
